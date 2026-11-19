@@ -37,7 +37,7 @@ export const EDUCATION = [
   },
   {
     title: "Diploma, Computer Engineering",
-    org: "Thakur Polytechnic — Zagdu Singh Charitable Trust College",
+    org: "Thakur Polytechnic Zagdu Singh Charitable Trust College",
     date: "Sep 2022 — May 2025",
   },
   {

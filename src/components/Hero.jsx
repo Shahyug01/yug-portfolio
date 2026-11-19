@@ -52,7 +52,7 @@ export default function Hero() {
             </span>
           </h2>
           <p className="hero-desc">
-            Computer Engineering student based in Mumbai, India — currently pursuing my
+            Computer Engineering student based in Mumbai, India currently pursuing my
             B.E. in Information Technology and sharpening my skills as a full-stack developer,
             one project at a time.
           </p>

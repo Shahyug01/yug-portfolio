@@ -22,7 +22,7 @@ export default function About() {
             </p>
             <p>
               I'm passionate about learning new technologies, strengthening my technical skills,
-              and growing as a software professional while contributing to meaningful projects —
+              and growing as a software professional while contributing to meaningful projects,
               currently focused on the MERN stack.
             </p>
           </Reveal>

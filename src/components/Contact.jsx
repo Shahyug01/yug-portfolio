@@ -8,7 +8,7 @@ export default function Contact() {
         <Reveal as="h2" className="section-title">Let's Connect</Reveal>
         <Reveal as="p" className="section-sub">
           I'm always open to internship opportunities, collaborations, or just a friendly hello.
-          Reach out — I'd love to hear from you.
+          Reach out  , I'd love to hear from you.
         </Reveal>
 
         <Reveal className="contact-cards" delay={0.1}>

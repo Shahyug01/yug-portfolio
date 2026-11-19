@@ -20,7 +20,7 @@ export default function Skills() {
               </svg>
             </div>
             <h3>MERN Stack</h3>
-            <p>MongoDB, Express.js, React and Node.js — building full-stack JavaScript applications end to end.</p>
+            <p>MongoDB, Express.js, React and Node.js, building full-stack JavaScript applications end to end.</p>
           </div>
           <div className="skill-highlight">
             <div className="skill-highlight-icon">
