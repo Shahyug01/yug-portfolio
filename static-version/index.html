@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yug Shah — Software Developer</title>
+<meta name="description" content="Yug Shah — Computer Engineering student and aspiring MERN stack developer based in Mumbai, India. Portfolio, skills, experience and education.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="logo">Yug<span class="accent-dot">.</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#education" data-nav>Education</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle color theme">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-primary btn-small header-cta">Get in touch</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="#about" data-nav>About</a>
+    <a href="#skills" data-nav>Skills</a>
+    <a href="#experience" data-nav>Experience</a>
+    <a href="#education" data-nav>Education</a>
+    <a href="#projects" data-nav>Projects</a>
+    <a href="#contact" data-nav>Contact</a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <a href="mailto:yugshahworks@gmail.com" class="btn btn-primary">Say hello</a>
+  </div>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="grid-overlay"></span>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-text hero-enter">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Open to internship &amp; entry-level opportunities
+        </div>
+
+        <p class="eyebrow">Hi, my name is</p>
+        <h1 class="hero-name">Yug Shah.</h1>
+        <h2 class="hero-role">
+          I build things with <span class="rotating-text" id="rotatingText">the MERN stack</span>
+        </h2>
+        <p class="hero-desc">
+          Computer Engineering student based in Mumbai, India — currently pursuing my
+          B.E. in Information Technology and sharpening my skills as a full-stack developer,
+          one project at a time.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#experience" class="btn btn-outline">My journey</a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="mailto:yugshahworks@gmail.com" aria-label="Email Yug Shah" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/yug-shah0109" target="_blank" rel="noopener noreferrer" aria-label="Yug Shah on LinkedIn" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual hero-enter" style="--delay:.15s">
+        <div class="code-card">
+          <div class="code-card-header">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="code-card-title">developer.js</span>
+          </div>
+          <pre class="code-card-body"><code><span class="c-kw">const</span> <span class="c-var">developer</span> = {
+  <span class="c-key">name</span>: <span class="c-str">'Yug Shah'</span>,
+  <span class="c-key">role</span>: <span class="c-str">'Software Developer'</span>,
+  <span class="c-key">location</span>: <span class="c-str">'Mumbai, India'</span>,
+  <span class="c-key">stack</span>: [
+    <span class="c-str">'React'</span>, <span class="c-str">'Node.js'</span>,
+    <span class="c-str">'Express'</span>, <span class="c-str">'MongoDB'</span>
+  ],
+  <span class="c-key">currentlyLearning</span>: <span class="c-bool">true</span>,
+  <span class="c-key">openToWork</span>: <span class="c-bool">true</span>,
+};</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-num reveal">01</p>
+      <h2 class="section-title reveal">About Me</h2>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I'm a Computer Engineering diploma graduate from Thakur Polytechnic, currently
+            pursuing my <strong>Bachelor of Engineering in Information Technology</strong> at
+            K.C. College of Engineering and Management Studies, Thane East.
+          </p>
+          <p>
+            During my diploma, I completed an internship at <strong>Static.Int Educare</strong>,
+            where I got hands-on exposure to a professional software environment. That
+            experience shaped my interest in software development, application deployment,
+            and manual testing.
+          </p>
+          <p>
+            I'm passionate about learning new technologies, strengthening my technical skills,
+            and growing as a software professional while contributing to meaningful projects —
+            currently focused on the MERN stack.
+          </p>
+        </div>
+
+        <div class="about-facts reveal" style="--delay:.1s">
+          <div class="fact-card">
+            <span class="fact-label">Location</span>
+            <span class="fact-value">Mumbai, Maharashtra, India</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Currently studying</span>
+            <span class="fact-value">B.E. Information Technology</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Focus areas</span>
+            <span class="fact-value">MERN Stack · App Deployment · Manual Testing</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-label">Email</span>
+            <span class="fact-value"><a href="mailto:yugshahworks@gmail.com">yugshahworks@gmail.com</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="section-num reveal">02</p>
+      <h2 class="section-title reveal">Skills &amp; Tools</h2>
+      <p class="section-sub reveal">A snapshot of what I work with and how I like to work.</p>
+
+      <div class="skills-top reveal">
+        <div class="skill-highlight">
+          <div class="skill-highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>MERN Stack</h3>
+          <p>MongoDB, Express.js, React and Node.js — building full-stack JavaScript applications end to end.</p>
+        </div>
+        <div class="skill-highlight">
+          <div class="skill-highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          </div>
+          <h3>Software Development</h3>
+          <p>Writing clean, functional code and learning the practices of a professional dev environment.</p>
+        </div>
+        <div class="skill-highlight">
+          <div class="skill-highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <h3>Project Management</h3>
+          <p>Planning and organizing work with a focus on timelines, priorities, and clear outcomes.</p>
+        </div>
+      </div>
+
+      <div class="skill-tags reveal" style="--delay:.1s">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">React</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Express.js</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">Git &amp; GitHub</span>
+        <span class="tag">Application Deployment</span>
+        <span class="tag">Manual Testing</span>
+        <span class="tag">REST APIs</span>
+        <span class="tag">Project Management</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <p class="section-num reveal">03</p>
+      <h2 class="section-title reveal">Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Intern</h3>
+              <span class="timeline-date">Jun 2024 — Jul 2024 · 2 mos</span>
+            </div>
+            <p class="timeline-org">Static.Int Educare · Mumbai</p>
+            <p class="timeline-desc">
+              Gained practical industry experience and hands-on exposure to a professional
+              software environment — my first real step into software development, application
+              deployment, and manual testing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <p class="section-num reveal">04</p>
+      <h2 class="section-title reveal">Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Bachelor of Engineering, Information Technology</h3>
+              <span class="timeline-date">Sep 2025 — May 2028</span>
+            </div>
+            <p class="timeline-org">K.C. College of Engineering and Management Studies, Thane East</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" style="--delay:.08s">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Diploma, Computer Engineering</h3>
+              <span class="timeline-date">Sep 2022 — May 2025</span>
+            </div>
+            <p class="timeline-org">Thakur Polytechnic — Zagdu Singh Charitable Trust College</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" style="--delay:.16s">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>SSC, High School</h3>
+              <span class="timeline-date">Jun 2010 — Jun 2022</span>
+            </div>
+            <p class="timeline-org">St. John XXIII High School</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="section-num reveal">05</p>
+      <h2 class="section-title reveal">Projects</h2>
+      <p class="section-sub reveal">Currently building out my project portfolio — here's what's in progress.</p>
+
+      <div class="projects-grid reveal" style="--delay:.1s">
+        <div class="project-card project-card-cta">
+          <div class="project-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>New projects in the making</h3>
+          <p>I'm actively building full-stack projects with the MERN stack. This space will
+            showcase them soon — in the meantime, let's connect.</p>
+          <a href="#contact" class="btn btn-outline btn-small">Get in touch</a>
+        </div>
+        <div class="project-card project-card-ghost">
+          <span class="ghost-tag">Coming soon</span>
+          <div class="ghost-line ghost-line-title"></div>
+          <div class="ghost-line"></div>
+          <div class="ghost-line ghost-line-short"></div>
+        </div>
+        <div class="project-card project-card-ghost">
+          <span class="ghost-tag">Coming soon</span>
+          <div class="ghost-line ghost-line-title"></div>
+          <div class="ghost-line"></div>
+          <div class="ghost-line ghost-line-short"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-inner">
+      <p class="section-num reveal">06</p>
+      <h2 class="section-title reveal">Let's Connect</h2>
+      <p class="section-sub reveal">
+        I'm always open to internship opportunities, collaborations, or just a friendly hello.
+        Reach out — I'd love to hear from you.
+      </p>
+
+      <div class="contact-cards reveal" style="--delay:.1s">
+        <a href="mailto:yugshahworks@gmail.com" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          </div>
+          <div>
+            <span class="contact-card-label">Email</span>
+            <span class="contact-card-value">yugshahworks@gmail.com</span>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/yug-shah0109" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <span class="contact-card-label">LinkedIn</span>
+            <span class="contact-card-value">linkedin.com/in/yug-shah0109</span>
+          </div>
+        </a>
+
+        <div class="contact-card contact-card-static">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <span class="contact-card-label">Location</span>
+            <span class="contact-card-value">Mumbai, Maharashtra, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Yug Shah. Built with HTML, CSS &amp; JavaScript.</p>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </button>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
